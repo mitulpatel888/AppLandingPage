@@ -37,11 +37,14 @@
 			color:white;
 			padding-bottom: 80px;
 		}
+		body{
+			position: relative;
+		}
 	</style>
 	<title>Shazam For Food</title>
   </head>
-  <body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body data-spy="scroll" data-target="#navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
 			  <a class="navbar-brand" href="#">Shazam For Food</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -49,7 +52,7 @@
 
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-				  <li class="nav-item active">
+				  <li class="nav-item">
 					<a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
 				  </li>
 				  <li class="nav-item">
